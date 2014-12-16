@@ -6,6 +6,7 @@ define(["fiber"], function(fiber){
         return {
             canvases: {},
             airport: null,
+            aircrafts: {},            
             
             // pixels per mile
             scale: 10,
@@ -14,7 +15,7 @@ define(["fiber"], function(fiber){
             },
             setScale: function(scale){
                 
-                if( scale > 5 && scale < 50 ){
+                if( scale > 3 && scale < 50 ){
                     this.scale = scale;
                 }
                 
@@ -34,6 +35,26 @@ define(["fiber"], function(fiber){
                 
                 return this.canvases[id];
                 
+            },
+            addAircraft: function(aircraft){
+            
+                this.aircrafts[aircraft.icao] = aircraft;
+            
+            },
+            removeAircraft: function(aircraft){
+            
+                delete this.aircrafts[aircraft.icao];
+            
+            },
+            getAircraft: function(icao){
+            
+                return this.aircrafts[icao];
+            
+            },
+            getAircrafts: function(){
+                
+                return this.aircrafts;
+            
             },
             setAirport: function(airport){
                 

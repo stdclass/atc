@@ -28,6 +28,10 @@ require(
     
     Scene.addCanvas(AirportCanvas);
     
+    var AircraftCanvas = new Canvas("aircraft", $container);
+    
+    Scene.addCanvas(AircraftCanvas);
+    
     var KDBG = new Airport({
         icao: "KDBG",
         name: "Debug Airport",
@@ -92,11 +96,11 @@ require(
     Scene.render();
     
     document.getElementById("plus").onclick = function(){
-        Scene.setScale( Scene.getScale() + 5 );
+        Scene.setScale( Scene.getScale() + 2 );
         Scene.render();
     };
     document.getElementById("minus").onclick = function(){
-        Scene.setScale( Scene.getScale() - 5 );
+        Scene.setScale( Scene.getScale() - 2 );
         Scene.render();
     };
     

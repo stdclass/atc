@@ -10,6 +10,9 @@
         <div id="container">
             
         </div>
+        <div id="sidebar">
+            
+        </div>
         <div id="scale">
             <div id="plus">+</div>
             <div id="minus">-</div>

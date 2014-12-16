@@ -9,10 +9,10 @@ define(["fiber"], function(fiber){
             name: "",
             runways: [],
             fixes: [],
-            width: 0.2,
-            length: 2,
+            width: 0.4,
+            length: 6,
             INDICATOR_WIDTH: 1,
-            INDICATOR_LENGTH: 4,
+            INDICATOR_LENGTH: 3,
             init: function(options){
                 
                 this.icao = options.icao;
