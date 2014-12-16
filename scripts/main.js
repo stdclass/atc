@@ -1,11 +1,16 @@
 require.config({
+    baseUrl: "scripts/lib",
     paths: {
-        fiber: 'vendor/fiber.min'
+        fiber: '../vendor/fiber.min'
     }
 });
 
-require(["lib/canvas"], function(canvas) {
+require(["canvas", "fiber"], function(Canvas) {
     
-    console.log(fiber);
+    var $container = document.getElementById("container");
+    
+    var AirportCanvas = new Canvas("airport", $container);
+    
+    AirportCanvas.render();
     
 });
