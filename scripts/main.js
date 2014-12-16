@@ -4,7 +4,7 @@ require.config({
     }
 });
 
-require(["fiber"], function(fiber) {
+require(["lib/canvas"], function(canvas) {
     
     console.log(fiber);
     
