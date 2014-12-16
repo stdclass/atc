@@ -13,3 +13,23 @@
     right: 300px;
     background: #354;
 }
+
+
+#scale{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#scale > div{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#scale > div:hover{
+    opacity: 0.8;
+}
